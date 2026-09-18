@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCare Workshop | Car Service & Booking</title>
+  <meta name="description" content="AutoCare Workshop provides a simple and interactive car service browsing and booking experience. Professional vehicle servicing and maintenance.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="#home" class="brand-logo" aria-label="AutoCare Workshop Home">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-4h14v4z"/>
+              <circle cx="7.5" cy="14.5" r="1.5"/>
+              <circle cx="16.5" cy="14.5" r="1.5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="brand-name">AUTOCARE</span>
+            <span class="brand-tagline">WORKSHOP</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#booking" class="nav-link">Booking</a></li>
+          <li><a href="#advice" class="nav-link">Advice</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-cta">
+            <a href="#booking" class="btn btn-primary">Book a Service</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <span class="section-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16h2v2h-2zm0-6h2v4h-2z"/></svg>
+              Reliable Service. Better Performance.
+            </span>
+            <h1 class="hero-title">
+              Your Car Deserves <span>the Best Care</span>
+            </h1>
+            <p class="hero-description">
+              Professional vehicle servicing and maintenance to keep your car safe, reliable and ready for every journey.
+            </p>
+            <div class="hero-actions">
+              <a href="#booking" class="btn btn-primary">
+                Book a Service
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#services" class="btn btn-outline">Explore Services</a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-badges">
+              <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <span>Professional Service</span>
+              </div>
+              <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span>Quality Care</span>
+              </div>
+              <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Customer First</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media reveal">
+            <div class="hero-image-container">
+              <img src="assets/hero-car.jpg" alt="Modern automobile service center bay with luxury car" class="hero-image" width="600" height="480">
+            </div>
+            <div class="hero-experience-badge">
+              <div class="badge-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.6C.4 7 1 10 3 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.5z"/></svg>
+              </div>
+              <div>
+                <div class="badge-text-title">Complete Vehicle Care</div>
+                <div class="badge-text-sub">Fast & Reliable Maintenance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <img src="assets/about.jpg" alt="AutoCare Workshop reception and service area" class="about-image" width="550" height="520">
+          </div>
+          
+          <div class="about-content-wrapper reveal">
+            <span class="section-tag">About AutoCare</span>
+            <h2 class="section-title">About Our Workshop</h2>
+            <p class="about-description">
+              AutoCare Workshop provides reliable vehicle servicing and maintenance for everyday drivers. Our goal is to make car care simple, convenient and accessible through quality service and clear customer communication.
+            </p>
+
+            <div class="about-cards-list">
+              <div class="about-card">
+                <div class="about-card-number">01</div>
+                <div>
+                  <h3 class="about-card-title">Quality Service</h3>
+                  <p class="about-card-desc">Carefully planned servicing to help keep your vehicle running smoothly.</p>
+                </div>
+              </div>
+
+              <div class="about-card">
+                <div class="about-card-number">02</div>
+                <div>
+                  <h3 class="about-card-title">Customer Care</h3>
+                  <p class="about-card-desc">Clear information and a simple booking experience for every customer.</p>
+                </div>
+              </div>
+
+              <div class="about-card">
+                <div class="about-card-number">03</div>
+                <div>
+                  <h3 class="about-card-title">Reliable Support</h3>
+                  <p class="about-card-desc">Helpful maintenance advice for better vehicle care.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES SECTION
+         ========================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">What We Offer</span>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">Choose the service your vehicle needs.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: General Service -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.6C.4 7 1 10 3 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.5z"/></svg>
+            </div>
+            <h3 class="service-title">General Service</h3>
+            <p class="service-desc">Routine inspection and maintenance for your vehicle.</p>
+            <button class="service-select-btn" data-service="General Service">
+              Select Service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- Service 2: Oil Change -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h3 class="service-title">Oil Change</h3>
+            <p class="service-desc">Engine oil replacement to support smooth engine performance.</p>
+            <button class="service-select-btn" data-service="Oil Change">
+              Select Service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- Service 3: Brake Service -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+            <h3 class="service-title">Brake Service</h3>
+            <p class="service-desc">Brake inspection and maintenance for safer driving.</p>
+            <button class="service-select-btn" data-service="Brake Service">
+              Select Service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- Service 4: Engine Check -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 9H9v6h6V9zm-2 4h-2v-2h2v2zm8-2V9h-2V7c0-1.1-.9-2-2-2h-2V3h-2v2h-2V3H9v2H7c-1.1 0-2 .9-2 2v2H3v2h2v2H3v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2zm-4 6H7V7h10v10z"/></svg>
+            </div>
+            <h3 class="service-title">Engine Check</h3>
+            <p class="service-desc">Basic engine inspection to identify potential problems.</p>
+            <button class="service-select-btn" data-service="Engine Check">
+              Select Service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- Service 5: AC Service -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+            </div>
+            <h3 class="service-title">AC Service</h3>
+            <p class="service-desc">Vehicle air-conditioning inspection and maintenance.</p>
+            <button class="service-select-btn" data-service="AC Service">
+              Select Service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- Service 6: Wheel Alignment -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+            </div>
+            <h3 class="service-title">Wheel Alignment</h3>
+            <p class="service-desc">Alignment service to support proper handling and tyre wear.</p>
+            <button class="service-select-btn" data-service="Wheel Alignment">
+              Select Service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CUSTOMER INFORMATION (WHAT YOU NEED BEFORE BOOKING)
+         ========================================================================== -->
+    <section class="requirements-section">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">Booking Checklist</span>
+          <h2 class="section-title">What You Need Before Booking</h2>
+          <p class="section-subtitle">Keep these details ready for a quick and seamless service booking experience.</p>
+        </div>
+
+        <div class="requirements-grid">
+          <div class="requirement-card reveal">
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3z"/></svg>
+            </div>
+            <h3 class="req-title">Vehicle Details</h3>
+            <p class="req-desc">Keep your car brand, model and registration number ready.</p>
+          </div>
+
+          <div class="requirement-card reveal">
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+            </div>
+            <h3 class="req-title">Service Requirement</h3>
+            <p class="req-desc">Choose the service that best matches your vehicle's needs.</p>
+          </div>
+
+          <div class="requirement-card reveal">
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+            </div>
+            <h3 class="req-title">Preferred Schedule</h3>
+            <p class="req-desc">Select a convenient date and time for your service request.</p>
+          </div>
+
+          <div class="requirement-card reveal">
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <h3 class="req-title">Contact Details</h3>
+            <p class="req-desc">Provide accurate contact information for communication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BOOKING PROCESS SECTION
+         ========================================================================== -->
+    <section class="process-section">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">Simple Steps</span>
+          <h2 class="section-title">Booking Process</h2>
+          <p class="section-subtitle">Follow our easy 4-step process to request your vehicle service.</p>
+        </div>
+
+        <div class="process-steps-wrapper">
+          <div class="step-card reveal">
+            <div class="step-number-circle">1</div>
+            <h3 class="step-title">Choose Service</h3>
+            <p class="step-desc">Select from our range of maintenance services.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-number-circle">2</div>
+            <h3 class="step-title">Enter Vehicle Details</h3>
+            <p class="step-desc">Provide your car brand, model & registration.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-number-circle">3</div>
+            <h3 class="step-title">Select Date & Time</h3>
+            <p class="step-desc">Pick a convenient date and time slot.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-number-circle">4</div>
+            <h3 class="step-title">Submit Request</h3>
+            <p class="step-desc">Send your request for booking confirmation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHY CHOOSE US SECTION
+         ========================================================================== -->
+    <section class="why-us-section">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">Why AutoCare</span>
+          <h2 class="section-title">Why Choose AutoCare?</h2>
+          <p class="section-subtitle">Dedicated to providing smooth and trustworthy automobile maintenance.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <span class="why-badge-num">01</span>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h3 class="why-title">Experienced Service</h3>
+            <p class="why-desc">Professional vehicle care standards for every customer.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <span class="why-badge-num">02</span>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h3 class="why-title">Transparent Info</h3>
+            <p class="why-desc">Clear communication and service guidance at every step.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <span class="why-badge-num">03</span>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+            </div>
+            <h3 class="why-title">Convenient Booking</h3>
+            <p class="why-desc">Fast and easy online booking request form.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <span class="why-badge-num">04</span>
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h3 class="why-title">Customer Focused</h3>
+            <p class="why-desc">Dedicated to ensuring a great customer experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAR SERVICE ADVICE SECTION
+         ========================================================================== -->
+    <section class="advice-section" id="advice">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">Maintenance Tips</span>
+          <h2 class="section-title">Simple Tips for Better Car Care</h2>
+          <p class="section-subtitle">Keep your vehicle in top condition with these simple maintenance recommendations.</p>
+        </div>
+
+        <div class="advice-grid">
+          <div class="advice-card reveal">
+            <div class="advice-header">
+              <div class="advice-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </div>
+              <h3 class="advice-title">Check Engine Oil</h3>
+            </div>
+            <p class="advice-desc">Regularly check your engine oil level according to your vehicle manufacturer's guidance.</p>
+          </div>
+
+          <div class="advice-card reveal">
+            <div class="advice-header">
+              <div class="advice-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>
+              </div>
+              <h3 class="advice-title">Check Tyres</h3>
+            </div>
+            <p class="advice-desc">Keep an eye on tyre condition and recommended tyre pressure.</p>
+          </div>
+
+          <div class="advice-card reveal">
+            <div class="advice-header">
+              <div class="advice-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg>
+              </div>
+              <h3 class="advice-title">Brake Awareness</h3>
+            </div>
+            <p class="advice-desc">Pay attention to unusual changes in braking performance and seek professional inspection when needed.</p>
+          </div>
+
+          <div class="advice-card reveal">
+            <div class="advice-header">
+              <div class="advice-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+              </div>
+              <h3 class="advice-title">Regular Service</h3>
+            </div>
+            <p class="advice-desc">Follow your vehicle manufacturer's recommended maintenance schedule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BOOKING FORM SECTION
+         ========================================================================== -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">Online Booking</span>
+          <h2 class="section-title">Book Your Car Service</h2>
+          <p class="section-subtitle">Fill in your details and choose a service. We'll use the information to prepare your booking request.</p>
+        </div>
+
+        <div class="booking-layout">
+          <!-- Sidebar Info Box -->
+          <div class="booking-info-box reveal">
+            <h3 class="booking-info-title">Simple & Reliable Car Care</h3>
+            <p class="booking-info-desc">
+              Complete the form with your vehicle details and preferred time slot. Our team will review your booking request promptly.
+            </p>
+
+            <div class="booking-perks-list">
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </div>
+                <div>
+                  <div class="perk-title">Easy Scheduling</div>
+                  <div class="perk-sub">Choose a convenient date & time</div>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </div>
+                <div>
+                  <div class="perk-title">Clear Service Selection</div>
+                  <div class="perk-sub">Select exact service your car needs</div>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                </div>
+                <div>
+                  <div class="perk-title">Prompt Confirmation</div>
+                  <div class="perk-sub">Instant booking request summary</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Container -->
+          <div class="booking-form-card reveal">
+            <form id="booking-form" novalidate>
+              <div class="form-grid">
+                <!-- Customer Name -->
+                <div class="form-group">
+                  <label for="customer-name" class="form-label">Customer Name <span>*</span></label>
+                  <input type="text" id="customer-name" class="form-control" placeholder="e.g. John Doe">
+                  <span id="customer-name-error" class="error-message"></span>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                  <label for="phone-number" class="form-label">Phone Number <span>*</span></label>
+                  <input type="tel" id="phone-number" class="form-control" placeholder="e.g. +91 98765 43210">
+                  <span id="phone-number-error" class="error-message"></span>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group full-width">
+                  <label for="email-address" class="form-label">Email Address <span>*</span></label>
+                  <input type="email" id="email-address" class="form-control" placeholder="e.g. john@example.com">
+                  <span id="email-address-error" class="error-message"></span>
+                </div>
+
+                <!-- Car Brand -->
+                <div class="form-group">
+                  <label for="car-brand" class="form-label">Car Brand <span>*</span></label>
+                  <input type="text" id="car-brand" class="form-control" placeholder="e.g. Toyota / BMW / Honda">
+                  <span id="car-brand-error" class="error-message"></span>
+                </div>
+
+                <!-- Car Model -->
+                <div class="form-group">
+                  <label for="car-model" class="form-label">Car Model <span>*</span></label>
+                  <input type="text" id="car-model" class="form-control" placeholder="e.g. Camry / 3 Series / Civic">
+                  <span id="car-model-error" class="error-message"></span>
+                </div>
+
+                <!-- Registration Number -->
+                <div class="form-group full-width">
+                  <label for="reg-number" class="form-label">Registration Number <span>*</span></label>
+                  <input type="text" id="reg-number" class="form-control" placeholder="e.g. KL-10-AB-1234">
+                  <span id="reg-number-error" class="error-message"></span>
+                </div>
+
+                <!-- Service Select Dropdown -->
+                <div class="form-group full-width">
+                  <label for="service-select" class="form-label">Select Service <span>*</span></label>
+                  <select id="service-select" class="form-control">
+                    <option value="">-- Choose a Service --</option>
+                    <option value="General Service">General Service</option>
+                    <option value="Oil Change">Oil Change</option>
+                    <option value="Brake Service">Brake Service</option>
+                    <option value="Engine Check">Engine Check</option>
+                    <option value="AC Service">AC Service</option>
+                    <option value="Wheel Alignment">Wheel Alignment</option>
+                  </select>
+                  <span id="service-select-error" class="error-message"></span>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="form-group">
+                  <label for="preferred-date" class="form-label">Preferred Date <span>*</span></label>
+                  <input type="date" id="preferred-date" class="form-control">
+                  <span id="preferred-date-error" class="error-message"></span>
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="form-group">
+                  <label for="preferred-time" class="form-label">Preferred Time <span>*</span></label>
+                  <select id="preferred-time" class="form-control">
+                    <option value="">-- Choose Time --</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                  </select>
+                  <span id="preferred-time-error" class="error-message"></span>
+                </div>
+
+                <!-- Additional Message -->
+                <div class="form-group full-width">
+                  <label for="additional-message" class="form-label">Additional Message</label>
+                  <textarea id="additional-message" class="form-control" rows="3" placeholder="Any specific issues or requests (optional)..."></textarea>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.75rem;">
+                <button type="submit" class="btn btn-primary btn-full">
+                  Confirm Booking
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ ACCORDION SECTION
+         ========================================================================== -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Find answers to common questions about our workshop booking and service process.</p>
+        </div>
+
+        <div class="faq-wrapper reveal">
+          <div class="faq-item is-open">
+            <button class="faq-header" aria-expanded="true">
+              <span>How long does a general car service take?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-body">
+              <p class="faq-answer">
+                A standard general inspection and maintenance service typically takes between 2 to 4 hours depending on the vehicle condition and required maintenance tasks.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" aria-expanded="false">
+              <span>What happens after I submit a booking request?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-body">
+              <p class="faq-answer">
+                Once submitted, your booking request details are generated into a confirmation summary. Our workshop representative will review the requested date and contact you to verify time slot availability.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" aria-expanded="false">
+              <span>Can I choose a specific service without a full package?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-body">
+              <p class="faq-answer">
+                Yes! You can select individual services such as an Oil Change, Brake Inspection, Wheel Alignment, or AC Check directly from our service menu.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" aria-expanded="false">
+              <span>What details should I bring on the service day?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </button>
+            <div class="faq-body">
+              <p class="faq-answer">
+                Please bring your vehicle, registration documents, and any specific notes regarding recent performance or warning lights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact AutoCare Workshop</h2>
+          <p class="section-subtitle">Reach out to us for inquiries or assistance with your vehicle service booking.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Location -->
+          <div class="contact-card reveal">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <h3 class="contact-title">Our Location</h3>
+            <p class="contact-detail">Perinthalmanna, Malappuram,<br>Kerala, India</p>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-card reveal">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <h3 class="contact-title">Phone Number</h3>
+            <p class="contact-detail">+91 88488 87954</p>
+            <a href="tel:+918848887954" class="btn btn-outline" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Call Us</a>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-card reveal">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <h3 class="contact-title">Email Address</h3>
+            <p class="contact-detail">mhd.ashift@gmail.com</p>
+            <a href="mailto:mhd.ashift@gmail.com" class="btn btn-outline" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       BOOKING CONFIRMATION MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="modal-status-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      </div>
+
+      <h2 class="modal-title" id="modal-title">Booking Request Submitted!</h2>
+      <p class="modal-message">
+        Thank you for choosing AutoCare Workshop. Your service request has been received.
+      </p>
+
+      <div class="summary-list">
+        <div class="summary-row">
+          <span class="summary-label">Customer Name:</span>
+          <span class="summary-value" id="summary-name">-</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Vehicle Details:</span>
+          <span class="summary-value" id="summary-vehicle">-</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Selected Service:</span>
+          <span class="summary-value" id="summary-service">-</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Preferred Date:</span>
+          <span class="summary-value" id="summary-date">-</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Preferred Time:</span>
+          <span class="summary-value" id="summary-time">-</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-outline btn-full" id="book-another-btn">Book Another Service</button>
+        <button class="btn btn-primary btn-full" onclick="document.getElementById('modal-close-btn').click()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3z"/></svg>
+            </div>
+            <span class="footer-logo-text">AUTOCARE WORKSHOP</span>
+          </div>
+          <p class="footer-tagline">Reliable Service. Better Performance.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Our Services</a></li>
+            <li><a href="#booking" class="footer-link">Book a Service</a></li>
+            <li><a href="#advice" class="footer-link">Car Care Advice</a></li>
+            <li><a href="#contact" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="footer-title">Contact Details</h3>
+          <div class="footer-contact-items">
+            <div class="footer-contact-row">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Perinthalmanna, Malappuram, Kerala, India</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span>+91 88488 87954</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>mhd.ashift@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AutoCare Workshop. Student Project.</p>
+        <p>Designed for reliable automobile service browsing &amp; booking demonstration.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
