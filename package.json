@@ -1,0 +1,19 @@
+{
+  "name": "autocare-booking-system",
+  "version": "1.0.0",
+  "description": "AutoCare Workshop - Car Workshop Booking Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo Static site ready for deployment"
+  },
+  "keywords": [
+    "car-workshop",
+    "booking-system",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "Muhammed Ashif T",
+  "license": "ISC"
+}

@@ -1,11 +1,5 @@
 {
   "version": 2,
   "name": "autocare-booking-system",
-  "cleanUrls": true,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ]
+  "cleanUrls": true
 }
