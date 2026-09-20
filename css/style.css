@@ -81,10 +81,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img {
+img, svg {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
   display: block;
+  flex-shrink: 0;
 }
 
 a {
